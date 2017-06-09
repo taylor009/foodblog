@@ -3,7 +3,7 @@
  */
 'use strict';
 
-angular.module('app', ['app.controllers', 'ngRoute'])
+angular.module('app', ['app.controllers', 'ngRoute' ])
     .config(function ($routeProvider){
         $routeProvider
             .when('/', {
@@ -16,4 +16,4 @@ angular.module('app', ['app.controllers', 'ngRoute'])
     })
     .run(function (){
 
-    })
+    });
