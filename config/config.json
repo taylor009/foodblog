@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "m6699bat",
+    "password": "",
     "database": "foodblog_db",
     "host": "localhost",
     "dialect": "mysql"
