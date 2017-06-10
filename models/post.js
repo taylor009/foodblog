@@ -3,8 +3,23 @@
  */
 module.exports = function(sequelize, DataTypes) {
     var Post = sequelize.define("Post", {
-        text: DataTypes.STRING,
-        complete: DataTypes.BOOLEAN
+        postID: {
+            AUTO_INCREMENT: true,
+            primaryKey: true,
+        },
+        title: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+        article: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+        postDate: {
+            type: DataTypes.DATE,
+            allowNull: false
+        }
+
     });
     return Post;
 };
