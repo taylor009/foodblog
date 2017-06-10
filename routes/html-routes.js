@@ -13,5 +13,8 @@ module.exports = function(app) {
     app.get("/", function(req, res) {
         res.sendFile(path.join(__dirname + "/../client/views/index.html"));
     });
+    app.get('/createPost', function(req, res){
+        res.sendfile(path.join(__dirname + "/../client/views/post/createPost.html"))
+    })
 
 };

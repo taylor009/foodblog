@@ -3,12 +3,12 @@
  */
 'use strict';
 
-angular.module('app', ['app.controllers', 'ngRoute' ])
+angular.module('app', ['app.controllers', 'ngRoute',  ])
     .config(function ($routeProvider){
         $routeProvider
             .when('/', {
-                templateUrl: '/views/partials/home.html',
-                controller: 'HomeCtrl'
+                templateUrl: '../views/components/home.html',
+                controller: 'MainCtrl'
             })
             .otherwise({
                 redirectTo: '/'

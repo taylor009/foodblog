@@ -15,8 +15,12 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
+//prepare libraries
+app.use('jquery', express.static(__dirname + '/node_modules/jquery/dist/'));
+
 // Static directory
 app.use(express.static("./client"));
+
 
 // Routes =============================================================
 
