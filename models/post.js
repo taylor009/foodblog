@@ -6,20 +6,18 @@
 
 module.exports = function(sequelize, DataTypes) {
     var Post = sequelize.define("Post", {
-        id: {
-            type: DataTypes.INTEGER,
-            AUTO_INCREMENT: true,
-            primaryKey: true
-        },
         title: {
             type: DataTypes.STRING,
             allowNull: false
         },
         article: {
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: false,
+            validate: {
+                len: [1, 1000]
+            }
         },
-        postDate: {
+         postDate: {
             type: DataTypes.DATE,
             allowNull: false
         }
