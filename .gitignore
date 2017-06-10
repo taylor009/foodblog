@@ -5,3 +5,4 @@
 /nbproj/project.xml
 .idea/
 client/js/directives/
+/node_modules/
